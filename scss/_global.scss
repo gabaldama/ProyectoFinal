@@ -1,0 +1,253 @@
+
+:root {
+  font-size: $font-size-base;
+}
+html, body {
+  color: $black;
+  font-family: $main-font;
+  font-size: .875rem;
+  font-weight: 400;
+  height: 100%;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  header {
+    .header-container { 
+      width: 100%;
+      background-color: $salmon;
+    }
+    h1 {
+      color: $black;
+      font-family: $titulo-header;
+      font-size: 3rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: rgba(0, 0, 0, 0.5);
+      }
+     /* change the link color */
+    .navbar-light .navbar-nav .nav-link {
+      color:$black;
+      font-size: 1rem;
+      }
+    /* color hover links */
+    .navbar-light .nav-item.active .nav-link,
+    .navbar-light .nav-item:hover .nav-link {
+      color: #ffffff;
+      }
+    /* boton search */
+    .btn-buscar {
+      color: $blanco;
+      background-color: transparent;
+      background-image: none;
+      border-color: $blanco;
+      }
+    .btn-buscar:hover {
+      color: $salmon;
+      background-color: $blanco;
+      border-color: $blanco;
+      }
+}
+.welcome {
+    background-color: $salmon;
+    width: 100%;
+      .relleno {
+      background-color: $salmon;
+      }
+      .top{ height: 2vh; }
+      .bottom { height: 10vh;}
+      .noPadding { padding: 0;}
+      .rectangulo {
+        background-color: $salmon;
+        width: 11%;
+        height: 14%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  h1 {
+    color: $black;
+    font-family: $titulo-header;
+    font-size: 2rem;
+
+    &.tituloWelcome {
+      color: $blanco;
+      -webkit-text-stroke: 2px $topo;
+      font-family: $titulo-header;
+      position: absolute;
+      top: 0px;
+      left: 5%;
+      font-size: 2rem;
+
+      @media only screen and (min-width: 375px)  {
+        font-size: 2rem;
+        top: -25px;
+        left: 5%;
+        }
+      @media only screen and (min-width: 576px) {
+        font-size: 3rem;
+        top: -40px;
+        left: 5%;
+        }
+      @media only screen and (min-width: 768px) {
+        font-size: 4rem;
+        top: -50px;
+        left: 5%;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 6rem;
+        top: -80px;
+        left: 5%;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 7rem;
+        top: -90px;
+        left: 5%;
+      }
+    }
+     
+  }
+}
+.pages {
+  .encabezado {
+    margin: 2%;
+    h2 {
+      font-family:$tituloSeccion;
+      font-weight: 400;
+      font-size: 4rem;
+      &.tituloSeccion {
+       padding: 1%;
+      border-left: 5px solid $salmon;
+         @media only screen and (min-width: 375px)  {
+           font-size: 1.8rem;      
+           width: 90%;    
+           }
+     }
+   }
+  }
+  .tituloGrande {
+   font-size: 5rem;
+ }
+  .secciones {
+    .misCards {
+      .seccionCard {
+         .bg-card {
+            height: 350px;
+            flex: 1 1 auto;
+            padding: 1.25rem;
+            background-color: $black;
+            color: $blanco;
+            border-top: 2px solid $salmon;
+            border-bottom: 2px solid $salmon;
+          }
+          h4 {
+            text-transform: uppercase;
+          }
+        }
+    } 
+  }
+}
+.post {
+  .encabezadoPost {
+    border-left: 5px solid $salmon;
+    margin-top: 2%;
+    padding-left: 1%;
+      h2{
+      padding: 2%;
+      text-transform: uppercase;
+    }
+    .tituloPost {
+      font-family: $main-font;
+      border-left: 1px solid #e3e0e0;
+    }
+    }
+    .sinopsis {
+      border: 1px solid $salmon;
+      margin-top: 2%;
+      padding: 2%;
+      
+    }
+    .table .thead-light th {
+      color: $black;
+      font-size: $main-font;
+      background-color:$salmon;
+      border-color: $gray;
+    } 
+  }
+/* Formulario */
+.fdoForm {
+  .espacioForm {
+  height: 3vh;
+       @media only screen and (min-width: 576px) {
+          height: 0vh;
+          }
+        @media only screen and (min-width: 768px) {
+          height: 0vh;
+        }
+        @media only screen and (min-width: 992px) {
+          height: 18vh;
+        }
+        @media only screen and (min-width: 1200px) {
+          height: 30vh;
+        }
+  }
+  .contactame { 
+    font-family:$tituloSeccion;
+    font-size: 2rem;
+    border-bottom: 1px solid #c1f5cf;
+    color: black;  
+    @media only screen and (min-width: 375px)  {
+      font-size: 1rem
+    }
+  }
+  .bigicon {
+    font-size: 2rem;
+    color: $blueContacto;
+  }
+  .btnEnviar { 
+   background-color: $blueContacto;
+   color: $blanco;
+  }
+}    
+/* footer index*/
+footer {
+  .footColor {
+    color: $blanco;
+    background-color: $black;
+  }
+}  
+.iconos {
+  .verticalRedes { 
+    color: $blanco;
+    font-size: 0.8rem; 
+    text-align: center;
+    text-align: center;
+    margin: 2%;
+      @media only screen and (min-width: 375px)  {
+      font-size: 0.8rem;        
+      }
+      @media only screen and (min-width: 576px) {
+      font-size: 1rem;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 2.2rem;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 3rem;
+      }
+  }
+  .iconosRedesFooter { 
+    color:$blanco;
+    font-size: 2rem;
+    margin: 3%;
+  }
+}
+
+}

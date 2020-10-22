@@ -1,0 +1,44 @@
+
+
+/*Screen sizes*/
+$screen_small: "576px";
+$screen_medium: "768px";
+$screen_large: "992px";
+$screen_xlarge: "1200px";
+
+$mobile: "only screen and (max-width: #{$screen_small - 1})";
+$mobile_landscape: "only screen and (min-width: #{$screen_small}) and (orientation : landscape)";
+
+$tablet: "only screen and (min-width: #{$screen_medium})";
+$tablet_portrait: "only screen and (min-width: #{$screen_medium}) and (orientation : portrait)";
+$tablet_landscape: "only screen and (min-width: #{$screen_medium}) and (orientation : landscape)";
+$tablet_max: "only screen and (max-width: #{$screen_large - 1})";
+$normal: "only screen and (min-width: #{$screen_large})";
+$desktop: "only screen and (min-width: #{$screen_xlarge})";
+
+/* Fonts */ 
+$main-font: 'Lato', sans-serif;
+$titulo-header: 'Oswald', sans-serif;
+$tituloSeccion: 'Oswald', sans-serif;
+$tituloPost: 'Dancing Script', cursive;
+$tituloResena: 'Lato', sans-serif;
+
+/* Font sizes */
+$font-size-base: 16px !default;
+
+/* Colors */
+$black: #222222;
+$gray: #CCC;
+$softgrey: #e8e7e7;
+$blanco: #ffffff;
+$agua: #bee2f6;
+$lightagua: #c1f5cf;
+$banderin: #a5c4d5;
+$banderin2: #b1d2e4;
+$salmon: #ff997f;
+$topo: #515454;
+$contacto1: #e7654b;
+$contacto2: #89c0d4;
+$darkagua: #96b2c2;
+$blueContacto: #014c65;
+$sombra: #353636;
